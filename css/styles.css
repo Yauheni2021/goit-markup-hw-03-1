@@ -9,14 +9,25 @@
   --bg-button-color: #188ce8;
   --bg-team-color: #f5f4fa;
   --footer-link-color: rgba(255, 255, 255, 0.6);
+  --btn-shadow-color: rgba(0, 0, 0, 0.15);
 }
 body {
   color: var(--primary-bg-color);
   color: var(--title-text-color);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  width: 1170px;
 }
 /* header */
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+  width: 1170px;
+}
 .logo {
   color: var(--accent-color);
   /* width: 145px;
@@ -48,7 +59,7 @@ body {
   text-decoration: none;
 }
 .link {
-  color: var(--link-color);
+  color: var(--title-text-color);
   text-decoration: none;
   font-weight: 500;
 }
@@ -67,19 +78,30 @@ body {
 }
 /* hero */
 .hero {
+  margin-bottom: 94px;
+  margin-top: 0;
+  outline: 2px solid tomato;
   background-color: var(--secondary-bg-color);
+  text-align: center;
 }
 .hero-title {
+  outline: 2px solid tomato;
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero-button {
+  margin-bottom: 200px;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 136px;
   background-color: var(--bg-button-color);
   color: var(--primary-bg-color);
   font-weight: 700;
@@ -90,6 +112,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   font-family: inherit;
+  box-shadow: 0px 4px 4px var(--btn-shadow-color);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -97,6 +120,15 @@ body {
   color: var(--primary-bg-color);
 }
 /* features */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.feature-list {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 .feature-list .section-title {
   font-weight: 700;
   font-size: 14px;
@@ -104,6 +136,8 @@ body {
   text-transform: uppercase;
 }
 .section-text {
+  margin-top: 0;
+  margin-bottom: 94px;
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
@@ -111,6 +145,8 @@ body {
 }
 /* Чем мы занимаемся? */
 .section-subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -119,12 +155,18 @@ body {
   text-transform: uppercase;
 }
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16em;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.section-list.image {
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 /* Наша команда */
 .section-worker {
