@@ -26,7 +26,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid tomato;
-  width: 1170px;
+  width: 1200px;
 }
 .logo {
   color: var(--accent-color);
@@ -80,12 +80,10 @@ body {
 .hero {
   margin-bottom: 94px;
   margin-top: 0;
-  outline: 2px solid tomato;
   background-color: var(--secondary-bg-color);
   text-align: center;
 }
 .hero-title {
-  outline: 2px solid tomato;
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--primary-bg-color);
@@ -126,6 +124,9 @@ body {
   list-style: none;
 }
 .feature-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   margin-bottom: 0;
   margin-top: 0;
 }
