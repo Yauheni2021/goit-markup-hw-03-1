@@ -16,7 +16,6 @@ body {
   color: var(--title-text-color);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  width: 1170px;
 }
 /* header */
 .container {
@@ -28,6 +27,12 @@ body {
   outline: 2px solid tomato;
   width: 1200px;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .logo {
   color: var(--accent-color);
   /* width: 145px;
@@ -58,6 +63,11 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+
+.image {
+  max-width: 100%;
+}
+
 .link {
   color: var(--title-text-color);
   text-decoration: none;
@@ -137,6 +147,9 @@ body {
   text-transform: uppercase;
 }
 .section-text {
+  display: flex;
+  flex-basis: calc(100% / 4);
+  margin-right: 30px;
   margin-top: 0;
   margin-bottom: 94px;
   font-size: 14px;
@@ -174,6 +187,10 @@ body {
   background-color: var(--bg-team-color);
 }
 
+.section-team.list {
+  display: flex;
+}
+
 .section-team.list .section-title.h3 {
   font-weight: 500;
   font-size: 16px;
@@ -187,8 +204,20 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.section-content {
+  text-align: center;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
