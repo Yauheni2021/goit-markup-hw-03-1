@@ -65,10 +65,21 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 /* Header link */
 .container.nav {
   display: flex;
   align-items: center;
+}
+
+.nav {
+  display: flex;
 }
 
 .image {
@@ -82,6 +93,7 @@ body {
 }
 .nav-item {
   color: var(--link-color);
+  align-items: center;
 }
 
 .item {
@@ -103,6 +115,7 @@ body {
 
 .nav-link.list {
   display: flex;
+  margin-left: 94px;
 }
 
 .nav-link.list .nav-item:not(:last-child) {
@@ -118,6 +131,7 @@ body {
 
 .contacts-list {
   display: flex;
+  margin-left: auto;
 }
 
 .contacts-list .item + .item {
@@ -174,7 +188,7 @@ body {
 .feature-list {
   display: flex;
   justify-content: center;
-  text-align: center;
+
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -194,6 +208,7 @@ body {
   line-height: 1.71em;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  width: 270px;
 }
 /* Чем мы занимаемся? */
 .section-subtitle {
@@ -228,6 +243,10 @@ body {
 .section-team.list {
   display: flex;
 }
+
+/* .section-team.list:not(:last-child) {
+  margin-left: 30px;
+} */
 
 .section-team.list .section-title.h3 {
   margin-bottom: 10px;
