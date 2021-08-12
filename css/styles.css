@@ -76,6 +76,7 @@ body {
 .container.nav {
   display: flex;
   align-items: center;
+  border: 1px solid #ececec;
 }
 
 .nav {
@@ -201,7 +202,7 @@ body {
 .section-text {
   display: flex;
   flex-basis: calc(100% / 4);
-  margin-right: 30px;
+  /* margin-right: 30px; */
   margin-top: 0;
   margin-bottom: 94px;
   font-size: 14px;
@@ -209,6 +210,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   width: 270px;
+}
+.text:not(:last-child) {
+  margin-right: 30px;
 }
 /* Чем мы занимаемся? */
 .section-subtitle {
@@ -232,16 +236,40 @@ body {
   color: var(--title-text-color);
 }
 .section-list.image {
+  display: flex;
   margin-top: 0;
   margin-bottom: 94px;
+}
+
+.section-text-image:not(:last-child) {
+  margin-right: 30px;
 }
 /* Наша команда */
 .section-worker {
   background-color: var(--bg-team-color);
 }
 
+.worker-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.worker-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.image {
+  display: block;
+  padding-bottom: 30px;
+}
+
 .section-team.list {
   display: flex;
+}
+
+.section-team.list:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* .section-team.list:not(:last-child) {
@@ -262,9 +290,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.section-content {
+/* .section-content {
   text-align: center;
-}
+} */
 
 h1,
 h2,
